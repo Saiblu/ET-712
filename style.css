@@ -55,18 +55,73 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* Adds a dark overlay for better text visibility */
-    z-index: 1; /* Ensures the overlay is behind the text */
+    background-color: rgba(0, 0, 0, 0.5); 
+    z-index: 1; 
 }
 
 #hero .container {
     position: relative;
-    z-index: 2; /* Ensures the text is above the overlay */
+    z-index: 2; 
 }
 
 html, body {
-    margin: 0; /* Removes default margins */
-    padding: 0; /* Removes default padding */
-    width: 100%; /* Ensures full width */
-    overflow-x: hidden; /* Prevents horizontal scrolling */
+    margin: 0; 
+    padding: 0; 
+    width: 100%; 
+    overflow-x: hidden; 
+    background-color: #625764; 
+}
+
+/* Work Experience Section */
+#work-experience {
+    background-color: #f8f9fa; 
+    padding: 50px 0;
+}
+
+#work-experience h2 {
+    color: #625764; 
+}
+
+/* Portfolio Section */
+#portfolio {
+    padding: 50px 0;
+}
+
+#portfolio h2 {
+    color: #625764; 
+}
+
+.card {
+    border: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+}
+
+.card-title {
+    color: #625764; 
+}
+
+.card-img-top {
+    width: 40%; 
+    height: auto; 
+    max-height: 200px; 
+    object-fit: cover; 
+    display: block;
+    margin: 0 auto;
+}
+
+/* About Me Section */
+#about-me {
+    padding: 50px 0;
+    background-color: #f8f9fa; /* Light background for contrast */
+}
+
+#about-me h2 {
+    color: #625764; /* Matches the theme color */
+}
+
+#about-me img {
+    max-width: 100%; /* Ensures the image is responsive */
+    height: auto; /* Maintains aspect ratio */
+    border: 5px solid #625764; /* Adds a border matching the theme */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
 }
