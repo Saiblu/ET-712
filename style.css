@@ -4,13 +4,22 @@
     border-radius: 0; 
     width: 100%; 
     margin: 0; 
-    padding: 0; 
+    padding: 20px 0; 
 }
 
 .navbar .container {
     max-width: 100%; 
     padding-left: 0; 
     padding-right: 0; 
+}
+
+.navbar-brand {
+    font-size: 1.8rem; /* Increases the font size */
+    font-weight: bold; /* Makes the text bold (optional) */
+}
+
+html {
+    scroll-behavior: smooth; /* Smooth scrolling for anchor links */
 }
 
 /* Buttons */
@@ -35,17 +44,17 @@
 }
 
 #hero {
-    background-image: url('img/bird.jpg'); /* Replace with your image path */
-    background-size: cover; /* Ensures the image covers the entire section */
-    background-position: center; /* Centers the image */
-    background-repeat: no-repeat; /* Prevents the image from repeating */
-    height: 100vh; /* Full viewport height */
-    display: flex; /* Enables flexbox for centering content */
-    align-items: center; /* Vertically centers content */
-    justify-content: center; /* Horizontally centers content */
-    text-align: center; /* Centers text */
-    color: white; /* Text color */
-    position: relative; /* Allows for overlay effects */
+    background-image: url('img/bird.jpg'); 
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat; 
+    height: 100vh; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    text-align: center; 
+    color: white; 
+    position: relative; 
 }
 
 #hero::before {
@@ -107,6 +116,31 @@ html, body {
     object-fit: cover; 
     display: block;
     margin: 0 auto;
+}
+
+/* Contact Section */
+#contact {
+    padding: 50px 0;
+    background-color: #f8f9fa; /* Light background for contrast */
+}
+
+#contact h2 {
+    color: #625764; /* Matches the theme color */
+}
+
+#contact .form-control {
+    border-radius: 0; /* Optional: Makes the input fields square */
+    border: 1px solid #ccc; /* Adds a subtle border */
+}
+
+#contact .btn-primary {
+    background-color: #625764; /* Matches the theme color */
+    border-color: #625764;
+}
+
+#contact .btn-primary:hover {
+    background-color: #4e4554; /* Darker shade for hover effect */
+    border-color: #4e4554;
 }
 
 /* About Me Section */
