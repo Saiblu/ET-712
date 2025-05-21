@@ -20,6 +20,11 @@
 
 html {
     scroll-behavior: smooth; /* Smooth scrolling for anchor links */
+    font-size: 20px; /* Default is 16px, increase as needed */
+}
+
+body {
+    font-size: 1.1rem; /* Slightly larger body text */
 }
 
 /* Buttons */
@@ -83,21 +88,34 @@ html, body {
 
 /* Work Experience Section */
 #work-experience {
-    background-color: #f8f9fa; 
-    padding: 50px 0;
+    background-color: #4e4554; /* Dark background color */
+    color: white; /* White text color */
+    padding-top: 20px;
+    padding-bottom: 60px;
+    padding: 50px 0; /* Adds vertical spacing */
+    padding-top: 20px;
+    padding-bottom: 50px;
 }
 
 #work-experience h2 {
-    color: #625764; 
+    color: white; /* Ensures the heading text is white */
 }
 
+#work-experience h4 {
+    color: white; /* Ensures the subheadings are white */
+}
+
+#work-experience p {
+    color: #dcdcdc; /* Light gray for paragraph text for better readability */
+}
 /* Portfolio Section */
 #portfolio {
+    background-color: #4e4554;
     padding: 50px 0;
 }
 
 #portfolio h2 {
-    color: #625764; 
+    color: #fff;
 }
 
 .card {
@@ -145,7 +163,7 @@ html, body {
 
 /* About Me Section */
 #about-me {
-    padding: 50px 0;
+    padding: 20px 0; /* Reduced vertical padding */
     background-color: #f8f9fa; /* Light background for contrast */
 }
 
@@ -158,4 +176,56 @@ html, body {
     height: auto; /* Maintains aspect ratio */
     border: 5px solid #625764; /* Adds a border matching the theme */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+}
+
+/* Education Section */
+#education { 
+    background-color: #f8f8f8; /* Light background for contrast */
+    padding: 60px 0; /* Adds vertical spacing */
+}
+
+#education .container {
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 20px;
+    padding-bottom: 60px;
+    max-width: 80%;
+}
+
+#education h2 {
+    color: #625764; /* Matches the theme color */
+}
+
+#education h4 {
+    color: #625764; /* Matches the theme color */
+    font-weight: bold;
+}
+
+#education p {
+    color: #6c757d; /* Subtle text color for descriptions */
+}
+
+/* Make headings larger */
+h1, .display-1, .display-3 {
+    font-size: 2.8rem;
+}
+
+h2 {
+    font-size: 2.2rem;
+}
+
+h3 {
+    font-size: 1.7rem;
+}
+
+h4 {
+    font-size: 1.3rem;
+}
+
+h5 {
+    font-size: 1.1rem;
+}
+
+.card-text, .lead, p, label, input, textarea, .btn, .nav-link {
+    font-size: 1.1rem;
 }
