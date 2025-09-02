@@ -1,0 +1,231 @@
+/* navigation styles*/
+.navbar {
+    background-color: #625764; 
+    border-radius: 0; 
+    width: 100%; 
+    margin: 0; 
+    padding: 20px 0; 
+}
+
+.navbar .container {
+    max-width: 100%; 
+    padding-left: 0; 
+    padding-right: 0; 
+}
+
+.navbar-brand {
+    font-size: 1.8rem; /* Increases the font size */
+    font-weight: bold; /* Makes the text bold (optional) */
+}
+
+html {
+    scroll-behavior: smooth; /* Smooth scrolling for anchor links */
+    font-size: 20px; /* Default is 16px, increase as needed */
+}
+
+body {
+    font-size: 1.1rem; /* Slightly larger body text */
+}
+
+/* Buttons */
+.btn-primary {
+    background-color: #625764; 
+    border-color: #625764;
+}
+
+.btn-primary:hover {
+    background-color: #625764; 
+    border-color: #625764;
+}
+
+.btn-light {
+    background-color: #625764; 
+    color: white; 
+}
+
+.btn-light:hover {
+    background-color: #625764; 
+    color: #625764;
+}
+
+#hero {
+    background-image: url('img/bird.jpg'); 
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat; 
+    height: 100vh; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    text-align: center; 
+    color: white; 
+    position: relative; 
+}
+
+#hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+    z-index: 1; 
+}
+
+#hero .container {
+    position: relative;
+    z-index: 2; 
+}
+
+html, body {
+    margin: 0; 
+    padding: 0; 
+    width: 100%; 
+    overflow-x: hidden; 
+    background-color: #625764; 
+}
+
+/* Work Experience Section */
+#work-experience {
+    background-color: #4e4554; /* Dark background color */
+    color: white; /* White text color */
+    padding-top: 20px;
+    padding-bottom: 60px;
+    padding: 50px 0; /* Adds vertical spacing */
+    padding-top: 20px;
+    padding-bottom: 50px;
+}
+
+#work-experience h2 {
+    color: white; /* Ensures the heading text is white */
+}
+
+#work-experience h4 {
+    color: white; /* Ensures the subheadings are white */
+}
+
+#work-experience p {
+    color: #dcdcdc; /* Light gray for paragraph text for better readability */
+}
+/* Portfolio Section */
+#portfolio {
+    background-color: #4e4554;
+    padding: 50px 0;
+}
+
+#portfolio h2 {
+    color: #fff;
+}
+
+.card {
+    border: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+}
+
+.card-title {
+    color: #625764; 
+}
+
+.card-img-top {
+    width: 40%; 
+    height: auto; 
+    max-height: 200px; 
+    object-fit: cover; 
+    display: block;
+    margin: 0 auto;
+}
+
+/* Contact Section */
+#contact {
+    padding: 50px 0;
+    background-color: #f8f9fa; /* Light background for contrast */
+}
+
+#contact h2 {
+    color: #625764; /* Matches the theme color */
+}
+
+#contact .form-control {
+    border-radius: 0; /* Optional: Makes the input fields square */
+    border: 1px solid #ccc; /* Adds a subtle border */
+}
+
+#contact .btn-primary {
+    background-color: #625764; /* Matches the theme color */
+    border-color: #625764;
+}
+
+#contact .btn-primary:hover {
+    background-color: #4e4554; /* Darker shade for hover effect */
+    border-color: #4e4554;
+}
+
+/* About Me Section */
+#about-me {
+    padding: 20px 0; /* Reduced vertical padding */
+    background-color: #f8f9fa; /* Light background for contrast */
+}
+
+#about-me h2 {
+    color: #625764; /* Matches the theme color */
+}
+
+#about-me img {
+    max-width: 100%; /* Ensures the image is responsive */
+    height: auto; /* Maintains aspect ratio */
+    border: 5px solid #625764; /* Adds a border matching the theme */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+}
+
+/* Education Section */
+#education { 
+    background-color: #f8f8f8; /* Light background for contrast */
+    padding: 60px 0; /* Adds vertical spacing */
+}
+
+#education .container {
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 20px;
+    padding-bottom: 60px;
+    max-width: 80%;
+}
+
+#education h2 {
+    color: #625764; /* Matches the theme color */
+}
+
+#education h4 {
+    color: #625764; /* Matches the theme color */
+    font-weight: bold;
+}
+
+#education p {
+    color: #6c757d; /* Subtle text color for descriptions */
+}
+
+/* Make headings larger */
+h1, .display-1, .display-3 {
+    font-size: 2.8rem;
+}
+
+h2 {
+    font-size: 2.2rem;
+}
+
+h3 {
+    font-size: 1.7rem;
+}
+
+h4 {
+    font-size: 1.3rem;
+}
+
+h5 {
+    font-size: 1.1rem;
+}
+
+.card-text, .lead, p, label, input, textarea, .btn, .nav-link {
+    font-size: 1.1rem;
+}
