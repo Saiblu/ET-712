@@ -101,20 +101,39 @@ switch(gender){
 
 console.log("\n ------Exercise 1------")
 
-let number1 = prompt ("Enter a number")
-if(number1) {
-    console.log(`${number1} Number is a negative number`)
+let users_input = prompt("Enter a number")
+let check_number = isNaN(parseFloat(users_input))
+console.log(`${users_input} is not a number? ${check_number}`)
+if(!check_number){
+    if(users_input < 0){ 
+        console.log(`${users_input} is a negative number`);
+    } else if(users_input == 0) {
+        console.log(`${users_input} is zero`);
+    } else {
+        console.log(`${users_input} is a positive number`);
+    }
+} else {
+    console.log(`${users_input} is a string`);
 }
-else if (number1){
-    console.log(``)
-}
-else{
-    console.log("")
-
-}
-
 
 console.log("\n ------Exercise 2------")
 
 let colors = ["Red" , "blue", "orange", "Magenta"]
 let user_colors = prompt("Enter a color ")
+
+switch(user_colors) {
+    case "Red": case "RED": case "red":
+        console.log("You selected RED")
+        break
+    case "Blue": case "BLUE": case "blue":
+        console.log("You selected BLUE")
+        break
+    case "Orange": case "ORANGE": case "orange":
+        console.log("You selected ORANGE")
+        break
+    case "Magenta": case "MAGENTA": case "magenta":
+        console.log("You selected MAGENTA")
+        break
+    default:
+        console.log("Error: unable to read the selected color")
+}
